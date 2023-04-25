@@ -1,0 +1,1004 @@
+// перша секція
+.header {
+    background: url(../img/circle/circle-header.svg) top right / auto no-repeat;
+}
+.navigation {
+    @extend %display-align-justify;
+    // justify-content: space-between;
+    gap: 64px;
+    padding: 40px 0 74px 0;
+
+    .burger {
+        display: flex;
+        width: 100%;
+        span {
+            display: none;
+            width: 28px;
+            height: 3px;
+            background-color: #36536b;
+            margin-bottom: 5px;
+        }
+    }
+    .burger__menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .burger {
+            display: none;
+        }
+        .linea {
+            display: none;
+        }
+    }
+
+    &__logo {
+        @extend %display-align-justify;
+    }
+
+    &__menu {
+        @extend %font-line-family;
+        display: flex;
+        gap: 40px;
+
+        &-link {
+            color: $secondary-color-juan-blue-op-light;
+        }
+
+        &-link:hover {
+            color: $secondary-color-juan-blue;
+            transition: all 0.3s ease 0.2s;
+        }
+    }
+}
+.workingapi {
+    @extend %display-align-justify;
+    justify-content: space-between;
+    margin-bottom: 75px;
+
+    &__content {
+        max-width: 546px;
+        &-title {
+            font-family: $font-heading;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 1;
+            letter-spacing: -0.553846px;
+            color: $secondary-color-juan-blue;
+            margin-bottom: 21px;
+        }
+
+        &-form {
+            max-width: 445px;
+            margin-bottom: 16px;
+        }
+
+        &-button {
+            position: absolute;
+            top: 0;
+            right: 0px;
+        }
+
+        &-paragraph {
+            text-indent: 27px;
+            color: $secondary-color-light-blue;
+        }
+
+        &-link {
+            color: $secondary-color-light-blue;
+            font-weight: 700;
+        }
+    }
+}
+
+.phone-box {
+    width: 100%;
+    max-width: 453px;
+    @extend %display-align-justify;
+    justify-content: center;
+}
+
+.phone {
+    width: 263px;
+    height: 500px;
+    background: #213648;
+    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+    border-radius: 33px;
+    padding: 13px 15px 23px 15px;
+    position: relative;
+
+    &__pieceofscreenright {
+        width: 26px;
+        height: 17px;
+        background: rgba(156, 183, 205, 255);
+        position: absolute;
+        border-radius: 20px 20px 0 0;
+        right: 94px;
+        z-index: 1;
+    }
+
+    &__pieceofscreenleft {
+        width: 26px;
+        height: 17px;
+        background: rgba(156, 183, 205, 255);
+        position: absolute;
+        border-radius: 20px 20px 0 0;
+        left: 94px;
+        z-index: 1;
+    }
+
+    &__pieceofcamera {
+        width: 50px;
+        height: 7px;
+        background: #213648;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    &__camera {
+        width: 26px;
+        height: 17px;
+        background: #213648;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        border-radius: 0 0 20px 20px;
+    }
+
+    &__screen {
+        width: 233px;
+        height: 465px;
+        background: linear-gradient(180deg, #9cb6cd 0%, #9ab3ca 41.73%, #557496 71.1%, #475178 99.22%);
+        border-radius: 30px;
+        padding: 0 8px 0 7px;
+        display: flex;
+
+        &-notification {
+            flex-direction: column;
+            @extend %display-align-justify;
+            justify-content: flex-start;
+        }
+
+        &-content {
+            background: #fbfcfe;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 5px;
+            padding: 16px 15px 14px 16px;
+        }
+
+        &-box {
+            @extend %display-align-justify;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+
+        &-title {
+            @extend %font-line-family;
+            font-size: 10px;
+            color: $primary-color-dark-pink;
+        }
+
+        span {
+            font-size: 10px;
+            line-height: 1.2px;
+            color: $secondary-color-juan-blue-op;
+        }
+    }
+
+    &__title {
+        @extend %font-line-family;
+        font-size: 32px;
+        color: #ffffff;
+        padding-top: 98px;
+        padding-bottom: 19px;
+    }
+
+    &__leftoutline {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    &__rightoutline {
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+
+    &__screen {
+        &-payment {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 1.4;
+            color: $secondary-color-juan-blue;
+
+            span {
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 1.4;
+                color: $secondary-color-juan-blue;
+            }
+        }
+    }
+    &__volumebutton {
+        width: 5px;
+        height: 65px;
+        background: #2e423c;
+        border-radius: 2px;
+        position: absolute;
+        top: 104px;
+        left: -2px;
+    }
+
+    &__lockbutton {
+        width: 5px;
+        height: 47px;
+        background: #2e423c;
+        border-radius: 2px;
+        position: absolute;
+        top: 157px;
+        right: -2px;
+    }
+}
+
+.phone::before {
+    content: url("../img/phone/reflect-frame-left.svg");
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.phone::after {
+    content: url("../img/phone/reflect-frame-right.svg");
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+// Кінець першої секції
+
+// Друга секція
+
+.bg_black {
+    background: url(../img/circle/circle-work.svg) top left / auto no-repeat;
+    background-color: $secondary-color-mirage-blue;
+    padding: 100px 0;
+}
+.workwith {
+    @extend %display-align-justify;
+    &__content {
+        max-width: 445px;
+    }
+
+    &__title {
+        font-family: $font-heading;
+        color: $primary-color-water-white;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        margin-bottom: 24px;
+    }
+
+    &__paragraph {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.9;
+        color: rgba(251, 252, 254, 0.7);
+        margin-bottom: 32px;
+    }
+
+    &__btn {
+        min-width: 129px;
+        background-color: $secondary-color-mirage-blue;
+        border: 1px solid #fbfcfe;
+        border-radius: 24px;
+        padding: 15px 32px 15px 32px;
+    }
+
+    &__btn:hover {
+        background-color: #ffffff;
+        color: $secondary-color-mirage-blue;
+    }
+    .brands {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        column-gap: 62px;
+        row-gap: 39px;
+        &__item {
+            width: 145px;
+            height: 33px;
+            @extend %display-align-justify;
+            justify-content: center;
+        }
+    }
+}
+
+// Кінець другої секції
+
+// Третя секція
+
+.easy {
+    @extend %display-align-justify;
+    padding: 150px 0 0 0;
+    gap: 125px;
+    &__pieceofcode {
+        width: 445px;
+        height: 284px;
+        background-color: $secondary-color-mirage-blue;
+        box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+        border-radius: 8px;
+    }
+
+    &__panel {
+        width: 445px;
+        height: 40px;
+        background-color: #2e3f4d;
+        border-radius: 8px 8px 0px 0px;
+        @extend %display-align-justify;
+        gap: 6px;
+        padding: 12px 16px 12px;
+        &-item {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+    }
+
+    &__code {
+        padding: 0 32px;
+        font-family: "Roboto Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #fbfcfe;
+        white-space: pre;
+
+        code {
+            font-family: "Roboto Mono";
+        }
+    }
+
+    &__content {
+        &-title {
+            font-family: $font-heading;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: $secondary-color-juan-blue;
+            margin-bottom: 24px;
+        }
+
+        &-paragraph {
+            max-width: 445px;
+            color: $secondary-color-light-blue;
+        }
+    }
+
+    .rosa {
+        background: #ba4270;
+    }
+    .grayblue {
+        background: #527695;
+    }
+    .gray {
+        background: #36536b;
+    }
+}
+
+// Кінець третьої секції
+
+// Четверта секція
+
+.bg-circle {
+    background: url(../img/circle/circle-simple.svg) right / auto no-repeat;
+}
+
+.simple {
+    @extend %display-align-justify;
+    justify-content: space-between;
+    padding: 150px 0 146px 0;
+}
+
+.simple__phones {
+    display: flex;
+    gap: 40px;
+    .phone {
+        &__screensimple {
+            &-logo {
+                height: 114px;
+                background-color: #36536b;
+                border-radius: 29px 29px 0 0;
+                padding: 35px 74px 57px 74px;
+            }
+
+            &-prgrph {
+                width: 204px;
+                height: 56px;
+                background: #fbfcfe;
+                box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+                border-radius: 5px;
+                position: absolute;
+                top: 90px;
+                right: 50%;
+                transform: translateX(50%);
+                @extend %display-align-justify;
+                justify-content: space-around;
+                z-index: 1;
+            }
+
+            &-totalprice {
+                @extend %font-line-family;
+                font-size: 20px;
+                letter-spacing: -0.153846px;
+                color: $primary-color-dark-pink;
+            }
+
+            &-purchase {
+                width: inherit;
+                height: 351px;
+                background-color: #edf3f8;
+                border-radius: 0 0 30px 30px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            &-items {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                position: absolute;
+                top: 44px;
+                right: 15px;
+            }
+
+            &-item {
+                width: 204px;
+                height: 40px;
+                background: #fbfcfe;
+                box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+                border-radius: 5px;
+                @extend %display-align-justify;
+                justify-content: space-between;
+                padding: 0 16px;
+            }
+            &-product {
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 1.8;
+                letter-spacing: -0.0769231px;
+                color: $secondary-color-juan-blue-op-light;
+            }
+            &-price {
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 1.1;
+                text-align: right;
+                letter-spacing: -0.1px;
+                color: $secondary-color-juan-blue;
+            }
+            &-logo {
+                background: url(../img/logo-phone.svg) center 33px / auto no-repeat;
+                background-color: $secondary-color-juan-blue;
+            }
+        }
+        .color {
+            background-color: $secondary-color-juan-blue;
+        }
+    }
+
+    .phone {
+        &__screencompleted {
+            width: 233px;
+            height: 465px;
+            border-radius: 30px;
+            @extend %display-align-justify;
+            justify-content: center;
+
+            &-content {
+                width: 176px;
+                height: 191px;
+                background: $primary-color-water-white;
+                box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+                border-radius: 5px;
+                flex-direction: column;
+                @extend %display-align-justify;
+                justify-content: center;
+                gap: 12px;
+                position: relative;
+            }
+
+            &-img {
+                width: 56px;
+            }
+
+            &-prgrph {
+                max-width: 149px;
+                text-align: center;
+                font-size: 13px;
+                line-height: 1.4;
+                letter-spacing: -0.1px;
+                color: #36536b;
+                span {
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 1.4;
+                    text-align: center;
+                    letter-spacing: -0.1px;
+                    color: $secondary-color-juan-blue;
+                }
+            }
+
+            &-btn {
+                min-width: 131px;
+                height: 30px;
+                padding: 9px 45px 9px 45px;
+                font-size: 11px;
+                line-height: 1.2;
+                letter-spacing: -0.0846154px;
+                position: absolute;
+                bottom: -13px;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+    }
+}
+
+// Кінець четвертої секції
+
+// П'ята секція
+
+.possibility {
+    @extend %display-align-justify;
+    justify-content: space-between;
+    margin-bottom: 96px;
+    &__card {
+        flex-direction: column;
+        @extend %display-align-justify;
+        justify-content: center;
+
+        &-img {
+            margin-bottom: 32px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.4;
+            letter-spacing: -0.138462px;
+            color: $secondary-color-juan-blue;
+            margin-bottom: 16px;
+        }
+
+        &-prgrph {
+            line-height: 1.7;
+            text-align: center;
+            letter-spacing: -0.115385px;
+            color: $secondary-color-light-blue;
+            max-width: 350px;
+        }
+    }
+}
+
+// Кінець п'ятої секції
+
+// Шоста секція
+
+.ready {
+    margin-bottom: 96px;
+    &__content {
+        @extend %display-align-justify;
+        justify-content: space-between;
+
+        &-title {
+            font-family: "DM Serif Display";
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 1.7;
+            letter-spacing: -0.369231px;
+            color: $secondary-color-juan-blue;
+        }
+
+        &-form {
+            position: relative;
+        }
+
+        &-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+// Кінець шостої секції
+
+// Футер
+
+.footer {
+    &__nav {
+        display: flex;
+        gap: 64px;
+        padding: 31px 0;
+
+        &-menu {
+            @extend %display-align-justify;
+            gap: 40px;
+        }
+
+        &-item {
+            a {
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                color: rgba(251, 252, 254, 0.7);
+            }
+        }
+
+        &-item a:hover {
+            color: $primary-color-water-white;
+            transition: all 0.3s ease 0.2s;
+        }
+
+        &-social {
+            @extend %display-align-justify;
+            gap: 24px;
+            margin-left: auto;
+        }
+
+        &-iconfb {
+            width: 24px;
+            height: 24px;
+            background: url("../img/social/facebook.svg") center / 24px 24px no-repeat;
+            cursor: pointer;
+            transition: all 0.3s ease 0.2s;
+        }
+
+        &-icontwr {
+            width: 24px;
+            height: 24px;
+            background: url("../img/social/twiter.svg") center / 24px 24px no-repeat;
+            cursor: pointer;
+            transition: all 0.3s ease 0.2s;
+        }
+
+        &-iconind {
+            width: 24px;
+            height: 24px;
+            background: url("../img/social/indeed.svg") center / 24px 24px no-repeat;
+            cursor: pointer;
+            transition: all 0.3s ease 0.2s;
+        }
+        &-iconfb:hover {
+            background: url("../img/social/facebook-hover.svg") center / 24px 24px no-repeat;
+            cursor: pointer;
+        }
+
+        &-icontwr:hover {
+            background: url("../img/social/twitter-hover.svg") center / 24px 24px no-repeat;
+            cursor: pointer;
+        }
+
+        &-iconind:hover {
+            background: url("../img/social/indeed-hover.svg") center / 24px 24px no-repeat;
+            cursor: pointer;
+        }
+    }
+}
+
+// pricing page
+
+.pricing {
+    background: url(../img/pricing/pricing-header-circle.svg) top right / auto no-repeat;
+    &__title {
+        @extend %pricing-about-contact-heading;
+        padding: 8px 0 72px 0;
+    }
+}
+
+.pricing {
+    &__plans {
+        @extend %display-align-justify;
+        gap: 30px;
+        margin-bottom: 96px;
+    }
+}
+
+.plan {
+    &__text {
+        border-bottom: 1px solid rgba(54, 83, 107, 0.25);
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        &-title {
+            font-family: $font-heading;
+            font-size: 32px;
+            line-height: 1.2;
+            letter-spacing: -0.246154px;
+            color: $primary-color-dark-pink;
+            margin-bottom: 16px;
+        }
+
+        &-prgrph {
+            color: $secondary-color-light-blue;
+            margin-bottom: 8px;
+        }
+
+        &-price {
+            font-family: $font-heading;
+            font-size: 56px;
+            line-height: 1.3;
+            letter-spacing: -0.430769px;
+            color: $secondary-color-juan-blue;
+        }
+    }
+
+    &__products {
+        border-bottom: 1px solid rgba(54, 83, 107, 0.25);
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 1.7;
+        &-item {
+            color: $secondary-color-juan-blue;
+            margin-bottom: 8px;
+            padding-left: 36px;
+            position: relative;
+        }
+
+        &-nochecked {
+            color: $secondary-color-juan-blue-op;
+            margin-bottom: 8px;
+            padding-left: 36px;
+        }
+        &-item::before {
+            content: url("../img/check.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__button {
+        border: 1px solid #36536b;
+        background-color: #edf3f8;
+        color: $secondary-color-juan-blue;
+    }
+
+    &__button:hover {
+        background-color: $secondary-color-juan-blue;
+        color: $primary-color-water-white;
+    }
+}
+
+// About page
+
+.about {
+    background: url(../img/pricing/pricing-header-circle.svg) top right / auto no-repeat;
+    &__content {
+        max-width: 920px;
+        &-title {
+            max-width: 660px;
+            @extend %pricing-about-contact-heading;
+            padding: 8px 0 51px 0;
+        }
+    }
+}
+.about__container {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.our {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin-bottom: 100px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        &-title {
+            @extend %pricing-about-contact-heading;
+            letter-spacing: -0.246154px;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        &-prgrph {
+            max-width: 635px;
+            color: $secondary-color-light-blue;
+        }
+    }
+}
+
+.bgimage {
+    height: 100%;
+    min-height: 500px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url(../img/about/about-image-bg.jpg) center / contain no-repeat;
+    margin-bottom: 72px;
+    &__circle {
+        width: 780px;
+        height: 780px;
+        background: url(../img/about/about-main-circle.svg) left / contain no-repeat;
+        position: absolute;
+        top: 216px;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.team {
+    margin-bottom: 72px;
+    @extend %display-align-justify;
+    justify-content: space-between;
+    &__content {
+        width: 100%;
+        max-width: 350px;
+        border-top: 1px solid rgba(54, 83, 107, 0.25);
+        border-bottom: 1px solid rgba(54, 83, 107, 0.25);
+        padding: 16px 0;
+        &-prgrph {
+            font-size: 16px;
+            line-height: 1.8;
+            color: $secondary-color-juan-blue;
+        }
+        &-number {
+            @extend %pricing-about-contact-heading;
+            line-height: 1.3;
+            color: $primary-color-dark-pink;
+        }
+    }
+}
+
+// Contact page
+
+.about__contact {
+    &-title {
+        max-width: 660px;
+        @extend %pricing-about-contact-heading;
+        padding: 8px 0 51px 0;
+    }
+}
+
+.join {
+    @extend %display-align-justify;
+    justify-content: space-between;
+    margin-bottom: 93px;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        p {
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: -0.0846154px;
+            color: rgba(255, 0, 0, 0.5);
+            padding: 8px 0 16px 20px;
+            display: none;
+        }
+        input {
+            height: 42px;
+            padding: 0 58px 17px 20px;
+            border-radius: 0;
+            background-color: transparent;
+            box-shadow: none;
+            border-bottom: 1px solid $secondary-color-juan-blue-op;
+            font-family: "Public Sans", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.7;
+            letter-spacing: -0.115385px;
+            color: $secondary-color-juan-blue;
+            position: relative;
+        }
+
+        input::placeholder {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.7;
+            letter-spacing: -0.115385px;
+            color: $secondary-color-juan-blue-op;
+        }
+
+        &-usermessage {
+            max-width: 445px;
+            height: 89px;
+            resize: none;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            font-family: "Public Sans", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.7;
+            letter-spacing: -0.115385px;
+            color: $secondary-color-juan-blue;
+            padding: 0 58px 17px 20px;
+            border-bottom: 1px solid $secondary-color-juan-blue-op;
+            // margin-bottom: 24px;
+        }
+
+        &-usermessage::placeholder {
+            font-family: "Public Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.7;
+            letter-spacing: -0.115385px;
+            color: $secondary-color-juan-blue-op;
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            background-color: rgba(54, 83, 107, 0.2);
+            margin: 0;
+            border: none;
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:checked {
+            background: url("../img/checked.svg") center / auto no-repeat;
+            background-color: #ba4270;
+        }
+
+        div {
+            @extend %display-align-justify;
+            gap: 26px;
+            // margin-bottom: 24px;
+        }
+
+        &-updates {
+            max-width: 395px;
+            line-height: 1.7;
+            letter-spacing: -0.115385px;
+            color: $secondary-color-juan-blue;
+        }
+        &-button {
+            max-width: 152px;
+            background-color: transparent;
+            box-shadow: none;
+            color: $secondary-color-juan-blue;
+            border: 1px solid $secondary-color-juan-blue;
+            border-radius: 24px;
+        }
+        &-button:hover {
+            background: $secondary-color-juan-blue;
+            color: $primary-color-water-white;
+        }
+    }
+
+    &__content {
+        &-title {
+            max-width: 445px;
+            font-family: "DM Serif Display";
+            font-size: 24px;
+            line-height: 1.3;
+            letter-spacing: -0.184615px;
+            color: rgba(54, 83, 107, 0.75);
+            margin-bottom: 40px;
+        }
+    }
+    .brands {
+        max-width: 570px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 62px;
+        row-gap: 39px;
+        &__item {
+            width: 146px;
+            height: 33px;
+            @extend %display-align-justify;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,371 @@
+@media (max-width: 800px) {
+    .container {
+        max-width: 689px;
+    }
+    .header {
+        background: url(../img/circle/circle-header800.svg) top / auto no-repeat;
+    }
+
+    .navigation {
+        padding: 40px 0 48px 0;
+    }
+
+    .workingapi {
+        flex-direction: column-reverse;
+        gap: 48px;
+        margin-bottom: 100px;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-title {
+                font-size: 48px;
+                line-height: 1.2;
+                text-align: center;
+                letter-spacing: -0.369231px;
+                margin-bottom: 22px;
+            }
+            &-paragraph {
+                text-indent: 0;
+                line-height: 1.2;
+            }
+            &-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    .phone {
+        width: 159px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 8px 9px 14px 9px;
+        &__pieceofscreenright {
+            width: 29px;
+            right: 87px;
+        }
+        &__pieceofscreenleft {
+            width: 29px;
+            left: 87px;
+        }
+        &__camera {
+            height: 14px;
+        }
+
+        &__screen {
+            width: 141px;
+            height: 279px;
+            border-radius: 12px;
+            &-content {
+                padding: 11px 9px 9px 9px;
+            }
+            &-title {
+                font-size: 6.5px;
+            }
+
+            span {
+                font-size: 6.5px;
+                line-height: 1.2px;
+            }
+            &-payment {
+                font-size: 6.5px;
+                line-height: 1.2;
+
+                span {
+                    font-size: 6.5px;
+                    line-height: 1.2;
+                }
+            }
+        }
+        &__title {
+            font-size: 20px;
+            padding-top: 63px;
+            padding-bottom: 16px;
+        }
+        &__volumebutton {
+            width: 4px;
+            height: 39px;
+            top: 65px;
+        }
+        &__lockbutton {
+            width: 4px;
+            height: 28px;
+            top: 100px;
+        }
+    }
+
+    .phone::before {
+        content: url("../img/phone/reflect-frame-left800.svg");
+    }
+
+    .phone::after {
+        content: url("../img/phone/reflect-frame-right800.svg");
+    }
+    .bg_black {
+        background: url(../img/circle/circle-work800.svg) top / auto no-repeat;
+        background-color: $secondary-color-mirage-blue;
+        padding: 88px 0;
+    }
+
+    .workwith {
+        flex-direction: column-reverse;
+        gap: 64px;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__paragraph {
+            text-align: center;
+        }
+        .brands {
+            justify-content: center;
+        }
+    }
+
+    .easy {
+        padding: 100px 0;
+        flex-direction: column;
+        gap: 48px;
+        &__pieceofcode {
+            width: 392px;
+            height: 250px;
+        }
+        &__panel {
+            width: 392px;
+            height: 35px;
+            &-item {
+                width: 14px;
+                height: 14px;
+            }
+        }
+        &__code {
+            font-size: 11px;
+            line-height: 1.6;
+        }
+        &__content {
+            text-align: center;
+            &-paragraph {
+                max-width: 573px;
+            }
+        }
+    }
+    .bg-circle {
+        background: none;
+    }
+    .simple {
+        flex-direction: column-reverse;
+        padding: 0 0 100px 0;
+        gap: 48px;
+    }
+    .simple__phones {
+        .phone {
+            width: 168px;
+            height: 320px;
+            &__pieceofscreenright {
+                width: 33px;
+                right: 91px;
+            }
+            &__pieceofscreenleft {
+                width: 33px;
+                left: 91px;
+            }
+            &__camera {
+                height: 14px;
+            }
+            &__screensimple {
+                width: 149px;
+                height: 297px;
+                &-logo {
+                    height: 73px;
+                    border-radius: 12px 12px 0 0;
+                    background: url(../img/logo-phone-800.svg) center 23px / auto no-repeat;
+                    background-color: $secondary-color-juan-blue;
+                    padding: 0;
+                }
+                &-prgrph {
+                    width: 130px;
+                    height: 36px;
+                    top: 58px;
+                }
+                &-totalprice {
+                    font-size: 12px;
+                }
+                &-purchase {
+                    height: 224px;
+                    border-radius: 0 0 12px 12px;
+                }
+                &-items {
+                    gap: 5px;
+                    top: 30px;
+                    right: 9px;
+                }
+                &-item {
+                    width: 130px;
+                    height: 26px;
+                    padding: 0 10px;
+                }
+                &-product {
+                    font-size: 6.5px;
+                }
+                &-price {
+                    font-size: 8px;
+                }
+            }
+        }
+        .phone {
+            &__screencompleted {
+                width: 149px;
+                height: 298px;
+                border-radius: 12px;
+                &-content {
+                    width: 112px;
+                    height: 122px;
+                    gap: 10px;
+                }
+                &-img {
+                    width: 35px;
+                }
+                &-prgrph {
+                    max-width: 89px;
+                    font-size: 8px;
+
+                    span {
+                        font-size: 12px;
+                    }
+                }
+                &-btn {
+                    min-width: 84px;
+                    height: 19px;
+                    padding: 7px 29px 7px 30px;
+                    font-size: 8px;
+                    bottom: -10px;
+                }
+            }
+        }
+        .phone::before {
+            content: url("../img/phone/reflect-frame-left-simple800.svg");
+        }
+
+        .phone::after {
+            content: url("../img/phone/reflect-frame-right-simple800.svg");
+        }
+    }
+    .possibility {
+        margin-bottom: 100px;
+        align-items: flex-start;
+        gap: 10px;
+        &__card {
+            &-img {
+                width: 88px;
+            }
+        }
+    }
+    .ready {
+        margin-bottom: 100px;
+        &__content {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    // pricing page
+    .pricing {
+        background: url(../img/pricing/pricing-circle800.svg) top right / auto no-repeat;
+        &__title {
+            text-align: center;
+            padding: 27px 0 69px 0;
+        }
+        &__plans {
+            @extend %display-align-justify;
+            gap: 10px;
+            margin-bottom: 100px;
+            .plan {
+                text-align: center;
+                &__text {
+                    padding-bottom: 21px;
+                    &-title {
+                        font-size: 24px;
+                        line-height: 1.7;
+                        margin-bottom: 13px;
+                    }
+                    &-prgrph {
+                        margin-bottom: 19px;
+                    }
+                    &-price {
+                        font-size: 48px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+    // about page
+    .about {
+        background: url(../img/pricing/pricing-circle800.svg) top right / auto no-repeat;
+        &__content {
+            display: flex;
+            justify-content: center;
+        &-title {
+            max-width: 569px;
+            font-size: 48px;
+            line-height: 1.2;
+            text-align: center;
+            letter-spacing: -0.369231px;
+            padding: 27px 0 54px 0;
+        }
+    }
+    }
+    .about__container {
+        max-width: 689px;
+    }
+    .our {
+        gap: 64px;
+        margin-bottom: 72px;
+        &__content {
+            &-prgrph {
+                max-width: 456px;
+            }
+        }
+    }
+    .bgimage {
+        min-height: 300px;
+        margin-top: 20px;
+        &__circle {
+            background: none;
+        }
+    }
+    .team {
+        margin-bottom: 64px;
+        gap: 10px;
+    }
+    // contact page
+    .about__contact {
+        display: flex;
+        justify-content: center;
+        padding: 27px 0 54px 0;
+    &-title {
+        max-width: 540px;
+        text-align: center;
+        font-size: 48px;
+        padding: 0;
+    }
+}
+    .join {
+        margin-bottom: 100px;
+        flex-direction: column;
+        &__form {
+            margin-bottom: 64px;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-title {
+                text-align: center;
+            }
+        }
+    }
+}
+
+

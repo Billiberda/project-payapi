@@ -1,0 +1,32 @@
+$font-stack: "Public Sans", sans-serif;
+$font-heading: "DM Serif Display", sans-serif;
+$primary-color-dark-pink: #ba4270;
+$primary-color-water-white: #fbfcfe;
+$secondary-color-juan-blue: #36536b;
+$secondary-color-juan-blue-op: rgba(54, 83, 107, 0.5);
+$secondary-color-juan-blue-op-light: rgba(54, 83, 107, 0.7);
+$secondary-color-mirage-blue: #1b262f;
+$secondary-color-charm-pink: #da6d97;
+$secondary-color-light-blue: #6c8294;
+
+%font-line-family {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+%display-align-justify {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+%pricing-about-contact-heading {
+    font-family: $font-heading;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -0.430769px;
+    color: $secondary-color-juan-blue;
+}
